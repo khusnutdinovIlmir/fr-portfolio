@@ -1,0 +1,255 @@
+@import mixins
+
+*
+  margin: 0
+  padding: 0
+  +setFontParametres()
+
+.header
+  +setPadding(20px 0 19px)
+  +setElementSizes(100%, 45px)
+  display: flex
+  position: fixed
+  top: 0
+  left: 0
+  z-index: 2
+  background-color: #007765
+  transition: all 1s
+
+  &.active
+    display: block
+    height: 191px
+
+    .header__menu
+      display: flex
+      flex-direction: column
+      margin-top: 20px
+      li
+        margin-top: 5px
+        margin-bottom: 5px
+        align-self: center
+        .delivetor
+          display: none
+        a
+          animation-name: hello
+          animation-duration: 2s
+
+    .toggle-btn
+      +setPadding(16px 10px 4px)
+      margin-right: 22px
+      background-color: #0c6659
+
+      span
+        background-color: #c9c9c9
+
+      &:hover
+        background-color: #015e50
+        span
+          background-color: #ffffff
+
+      span:first-of-type
+        transform: translate(0, 100%) rotate(45deg)
+      span:nth-of-type(2)
+        display: none
+      span:nth-of-type(3)
+        transform: translate(0, -100%) rotate(-45deg)
+
+  &__logo
+    +setMargin(0 auto)
+    +setElementSizes(184px, 45px)
+
+    @media screen and ( max-width:  768px)
+      margin-left: 30px
+
+    img
+      +setElementSizes(184px, 45px)
+      display: block
+
+  &__menu
+    +setMargin(0 auto)
+    display: flex
+    flex-direction: row
+    padding-top: 9px
+    color: #ffffff
+
+    @media screen and ( max-width:  768px)
+      display: none
+
+    li
+      +setMargin(0 10px)
+      display: block
+
+      a
+        +setFontParametres($fontWeight: 500, $fontSize: 24px, $lineHeight: 29px, $clr: #ffffff)
+        text-decoration: none
+
+        &:hover
+          color: #daff53
+
+      span
+        display: block
+        margin-top: 4px
+        width: 2px
+        height: 24px
+        background-color: #ffffff
+
+  &__toggle-btn
+    +setMargin(15px 10px 0 0)
+    +setPadding(13px 10px 7px)
+    +setElementSizes(35px, 35px)
+    display: none
+    position: absolute
+    top: 0
+    right: 0
+    border-radius: 10px
+    background-color: #015e50
+    transition: transform, background-color 2s
+    cursor: pointer
+
+    &:hover
+      background-color: #0c6659
+
+      span
+        background-color: #c9c9c9
+
+    @media screen and ( max-width:  768px)
+      display: block
+
+    span
+      +setMargin(4px 0)
+      +setElementSizes(35px, 4px)
+      display: block
+      transition: all 1s
+      background-color: #ffffff
+
+.behind
+  +setElementSizes(100%, 100%)
+  position: fixed
+  left: 0
+  top: 0
+  z-index: 1
+  background-color: rgba(0, 0, 0, 0.5)
+  opacity: 1
+  visibility: hidden
+  transition: all 300ms cubic-bezier(0.4, 0, 0.2, 1)
+
+.jumbotron
+  +setPadding(244px 0 260px)
+  background-image: url('../img/jumbotron.png')
+  background-size: cover
+  background-position: center
+  b
+    font-size:
+    color: #000000
+
+  h2
+    +setMargin(0 2px)
+    +setFontParametres($fontStyle: normal, $fontWeight: 500, $fontSize: 72px, $lineHeight: 84px, $clr: #FFFFFF)
+    display: block
+    text-align: center
+
+    @media screen and ( max-width:  768px)
+      font-size: 50px
+      line-height: 62px
+    @media screen and ( max-width:  568px)
+      font-size: 38px
+      line-height: 50px
+
+#the-problem, #piedpipercoin, #the-team
+  padding-top: 42px
+  padding-bottom: 92px
+  background-color: #EEEEEE
+
+  .text
+    +setPadding(0 5px)
+    margin-left: 15%
+    margin-right: 15%
+    h2
+      +setFontParametres($fontWeight: 500, $fontSize: 64px, $lineHeight: 75px, $clr: #007765)
+      display: block
+      margin-bottom: 16px
+      text-align: center
+
+      @media screen and ( max-width:  768px)
+        font-size: 42px
+        line-height: 53px
+      @media screen and ( max-width:  568px)
+        font-size: 30px
+        line-height: 31px
+    p
+      +setFontParametres($fontSize: 32px, $lineHeight: 37px, $clr: #000000)
+      margin-bottom: 40px
+    
+      b
+        font-weight: 500
+        color: #000000
+      &:last-child
+        margin-bottom: 0
+      @media screen and ( max-width:  768px)
+        font-size: 16px
+        line-height: 20px
+
+#piedpipercoin
+  background-color: #ffffff
+  img
+    margin-right: 48px
+    float: left
+    transition: all 1s
+    @media screen and ( max-width:  768px)
+      +setElementSizes(100px, 100px)
+      margin-right: 20px
+
+.hero-block
+  +setPadding(128px 15% 127px)
+  +setFontParametres($fontStyle: italic, $fontWeight: 500, $fontSize: 48px, $lineHeight: 56px, $clr: #ffffff)
+  text-align: center
+  background-image: url('../img/hero-block.png')
+  @media screen and ( max-width:  768px)
+    font-size: 26px
+    line-height: 34px
+
+#the-team
+  +setPadding(58px 5% 84px)
+
+  .text
+    margin-left: auto
+    margin-right: auto
+    text-align: center
+
+  .the-team-cards
+    display: flex
+    flex-wrap: wrap
+    width: 100%
+    margin-top: 32px
+
+    .member-card
+      +setMargin(0 auto 50px)
+      flex-basis: 33%
+      @media screen and ( max-width:  1110px)
+        +setPadding(0 10px)
+      @media screen and ( max-width:  768px)
+        +setPadding(0 20px)
+
+      img
+        +setMargin(0 auto 10px)
+        display: block
+
+      .post
+        +setFontParametres($fontStyle: italic, $fontSize: 18px, $lineHeight: 21px, $clr: #000000)
+        display: block
+
+      .name
+        +setFontParametres($fontWeight: bold, $fontSize: 24px, $lineHeight: 28px, $clr: #007765)
+        display: block
+
+footer
+  +setPadding(50px 15% 62px)
+  +setFontParametres($fontStyle: normal, $fontSize: 18px, $lineHeight: 21px, $clr: #ffffff)
+  text-align: center
+  background-color: #333333
+
+@keyframes hello
+  0%
+    opacity: 0
+  100%
+    opacity: 1

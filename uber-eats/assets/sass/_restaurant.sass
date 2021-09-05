@@ -1,0 +1,159 @@
+.restaurant-preview
+  position: relative
+  height: 364px
+  background-image: url(../img/restaurant-bg-img.png)
+  background-position: center
+  background-size: cover
+  @media screen and ( max-width:  768px)
+    height: 255px
+    text-align: center
+  h2
+    font-family: Roboto
+    font-style: normal
+    font-weight: normal
+    font-size: 36px
+    line-height: 42px
+    color: #1D1D1D
+    margin-bottom: 62px
+  .main-info
+    position: absolute
+    top: 80px
+    left: 80px
+    padding: 38px
+    background: #FFFFFF
+    box-shadow: 0px 0px 16px rgba(117, 117, 117, 0.2)
+    border-radius: 2px
+    transition: all 1s
+    @media screen and ( max-width:  1200px)
+      left: 8px
+    @media screen and ( max-width:  768px)
+      right: 8px
+      top: 131px
+
+    .info
+      display: flex
+      flex-direction: row
+      justify-content: space-between
+      @media screen and ( max-width:  768px)
+        flex-direction: column
+      .categories
+        font-family: Roboto
+        font-style: normal
+        font-weight: normal
+        font-size: 14px
+        line-height: 16px
+        color: #626262
+        align-self: center
+        margin-bottom: 16px
+      .delivery-time
+        background: #262626
+        border-radius: 16px
+        padding: 8px 16px
+        font-family: Roboto
+        font-style: normal
+        font-weight: normal
+        font-size: 13px
+        line-height: 15px
+        color: #FFFFFF
+        align-self: center
+
+.filter
+  display: flex
+  flex-direction: row
+  justify-content: flex-start
+  list-style: none
+  padding: 32px 0 29px
+  transition: all 1s
+  li
+    display: block
+    font-family: Roboto
+    font-style: normal
+    font-weight: normal
+    font-size: 16px
+    line-height: 19px
+    color: #626262
+    margin-right: 40px
+    &.active
+      color: #327430
+  @media screen and ( max-width:  768px)
+    margin-top: 112px
+    padding: 32px 0 29px
+    li
+      display: none
+
+.foods-list
+  margin-bottom: 80px
+  transition: all 1s
+  padding: 0
+  h3
+    font-family: Roboto
+    font-style: normal
+    font-weight: normal
+    font-size: 22px
+    line-height: 34px
+    color: #1D1D1D
+    margin-bottom: 32px
+    transition: all 1s
+    @media screen and ( max-width:  768px)
+      text-align: center
+    span
+      display: block
+    hr
+      display: none
+      @media screen and ( max-width:  768px)
+        display: block
+        width: 50px
+        margin: 12px auto
+
+  .food-item
+    display: flex
+    justify-content: space-between
+    padding-right: 0
+    border: 1px solid rgba(117, 117, 117, 0.2)
+    box-sizing: border-box
+    border-radius: 2px
+    margin-right: 16px
+    margin-bottom: 40px
+    @media screen and ( max-width:  768px)
+      border: none
+      border-bottom: 1px solid rgba(117, 117, 117, 0.2)
+    img
+      display: block
+      width: 170px
+      height: 100%
+      align-self: flex-end
+      cursor: pointer
+      @media screen and ( max-width:  1200px)
+        width: 200px
+      @media screen and ( max-width:  768px)
+        width: 102px
+        
+        
+
+    .food-description
+      display: flex
+      flex-direction: column
+      justify-content: flex-start
+      margin: 16px
+      margin-right: auto
+      font-family: Roboto
+      font-style: normal
+      font-weight: normal
+      @media screen and ( max-width:  1200px)
+        margin: 8px
+        margin-right: auto
+      .food-name
+        font-size: 16px
+        line-height: 24px
+        color: #1D1D1D
+        cursor: pointer
+      .food-sostav
+        font-size: 13px
+        line-height: 21px
+        color: #626262
+      .food-price
+        font-weight: 500
+        font-size: 15px
+        line-height: 21px
+        color: #1D1D1D
+        margin-top: auto

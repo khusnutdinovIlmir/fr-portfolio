@@ -1,0 +1,21 @@
+@import variables
+
+$mainFontFamily: 'Roboto'//, sans-serif
+
+=setFontParametres($fontFamily: $mainFontFamily, $fontStyle: normal, $fontWeight: normal, $fontSize: inherit, $lineHeight: inherit, $clr: #fff)
+  font-family: $fontFamily
+  font-weight: $fontWeight
+  font-size: $fontSize
+  font-style: $fontStyle
+  line-height: $lineHeight
+  color: $clr
+
+=setMargin($mrg...)
+  margin: $mrg
+
+=setPadding($padd...)
+  padding: $padd
+
+=setElementSizes($wdth, $hght)
+  width: $wdth
+  height: $hght

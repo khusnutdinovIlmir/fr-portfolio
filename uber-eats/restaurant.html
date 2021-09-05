@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/flexboxgrid2@7.2.1/flexboxgrid2.css"
+    />
+
+    <link rel="stylesheet" href="./assets/css/style.min.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Uber Eats — Трактир «Пушкин»</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="logo">
+        <a href="./uber-eats.html">
+          <img src="./assets/img/logo.png" alt="" />
+        </a>
+      </div>
+      <div class="sign-in-btn">Войти</div>
+      <div class="basket">
+        <img src="./assets/img/basket.png" alt="" />
+      </div>
+    </header>
+    <div class="search">
+      <input type="search" placeholder="Поиск по ресторанам и кухням" />
+    </div>
+    <!---->
+    <div class="restaurant-preview">
+      <div class="bg"></div>
+      <div class="main-info">
+        <h2>Трактир «Пушкин»</h2>
+        <div class="info">
+          <div class="categories">
+            <span class="prices">₽₽</span>
+            <span> • </span>
+            <span class="catecories">Японская</span>
+          </div>
+          <span class="delivery-time">40-45 мин</span>
+        </div>
+      </div>
+    </div>
+    <div class="filter container">
+      <li class="filter-item active">Закуски</li>
+      <li class="filter-item">Салаты</li>
+      <li class="filter-item">Супы</li>
+      <li class="filter-item">Горячие блюда</li>
+      <li class="filter-item">Гарниры</li>
+      <li class="filter-item">Десерты</li>
+    </div>
+    <div class="foods-list container">
+        <h3>
+          <span>Закуски</span>
+          <hr>
+        </h3>
+        <div class="row">
+          <div class="food-item col-xl-5">
+            <div class="food-description col-8">
+              <div class="food-name">Сельдь на бородинском хлебе</div>
+              <div class="food-sostav">С яйцом и огурцом</div>
+              <div class="food-price">240 ₽</div>
+            </div>
+            <img class="col-3" src="./assets/img/food-snack-1.png" alt="" />
+          </div>
+          <div class="food-item col-xl-5">
+            <div class="food-description col-8">
+              <div class="food-name">Соленья ассорти</div>
+              <div class="food-sostav"></div>
+              <div class="food-price">320 ₽</div>
+            </div>
+            <img class="col-3" src="./assets/img/food-snack-2.png" alt="" />
+          </div>
+        </div>
+        <div class="row">
+          <div class="food-item col-xl-5">
+            <div class="food-description col-8">
+              <div class="food-name">Грибы маринованные</div>
+              <div class="food-sostav"></div>
+              <div class="food-price">300 ₽</div>
+            </div>
+            <img class="col-3" src="./assets/img/food-snack-3.png" alt="" />
+          </div>
+          <div class="food-item col-xl-5">
+            <div class="food-description col-8">
+              <div class="food-name">Сало домашнее с горчицей</div>
+              <div class="food-sostav"></div>
+              <div class="food-price">320 ₽</div>
+            </div>
+            <img class="col-3" src="./assets/img/food-snack-4.png" alt="" />
+          </div>
+        </div>
+        <div class="row">
+          <div class="food-item col-xl-5">
+            <div class="food-description col-8">
+              <div class="food-name">Малосольная семга</div>
+              <div class="food-sostav"></div>
+              <div class="food-price">390 ₽</div>
+            </div>
+            <img class="col-3" src="./assets/img/food-snack-5.png" alt="" />
+          </div>
+          <div class="food-item col-xl-5">
+            <div class="food-description col-8">
+              <div class="food-name">Язык говяжий с хреном</div>
+              <div class="food-sostav"></div>
+              <div class="food-price">350 ₽</div>
+            </div>
+            <img class="col-3" src="./assets/img/food-snack-6.png" alt="" />
+          </div>
+        </div>
+    </div>
+    <!---->
+    <footer>
+      <div class="white-logo">
+        <a href="./uber-eats.html">
+          <img src="./assets/img/footer-white-logo.png" alt="" />
+        </a>
+      </div>
+      <hr />
+      <div class="punkts">
+        <div class="one">
+          <select class="languages">
+            <option>Русский</option>
+            <option>English</option>
+          </select>
+          <div class="social-media">
+            <span><span class="diez">#</span>UberEats</span>
+            <ul class="list">
+              <li>
+                <img src="./assets/img/facebook-logo.png" alt="" />
+              </li>
+              <li>
+                <img src="./assets/img/twiter-logo.png" alt="" />
+              </li>
+              <li>
+                <img src="./assets/img/inst-logo.png" alt="" />
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="two">
+          <ul>
+            <li>Об UberEats</li>
+            <li>Станьте партнёром по доставке</li>
+            <li>Станьте партнёром-рестораном</li>
+          </ul>
+        </div>
+        <div class="three">
+          <ul>
+            <li>Все города</li>
+            <li>Цены</li>
+            <li>Помощь</li>
+            <li>FAQs</li>
+          </ul>
+        </div>
+      </div>
+      <hr />
+      <div class="downloads">
+        <img src="./assets/img/dw-app-store.png" alt="" />
+        <img src="./assets/img/dw-google-play.png" alt="" />
+      </div>
+      <hr />
+      <div class="info">
+        <ul>
+          <li>© 2017 Uber Technologies Inc.</li>
+          <li>Обработка персональных данных</li>
+          <li>Пользовательское соглашение</li>
+        </ul>
+      </div>
+    </footer>
+    <div class="btn-up">
+      <div class="arrow">
+        <img src="./assets/img/btn-up-img.png" alt="" />
+      </div>
+    </div>
+
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>

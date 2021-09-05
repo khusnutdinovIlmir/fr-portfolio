@@ -1,0 +1,312 @@
+@import restaurant
+
+*
+  margin: 0
+  padding: 0
+
+.header
+  display: flex
+  flex-direction: row
+  justify-content: space-between
+  //flex-wrap: wrap
+  align-items: center
+  height: auto
+  width: auto
+  padding: 16px 24px 16px 81px
+  background: #FFFFFF
+  box-shadow: 0px 0px 16px rgba(38, 38, 38, 0.16)
+  transition: padding 1s
+
+  @media screen and ( max-width:  768px)
+    padding: 16px 8px
+
+  .logo
+    width: 119.23px
+    height: 12.31px
+    img
+      display: block
+      width: 100%
+      height: 100%
+  .sign-in-btn
+    margin-left: auto
+    margin-right: 27px
+    border: 1px solid #E0E0E0
+    box-sizing: border-box
+    border-radius: 2px
+    padding: 14px 20px
+    cursor: pointer
+
+    font-family: Roboto
+    font-style: normal
+    font-weight: 500
+    font-size: 12px
+    align-items: center
+    text-align: center
+
+    color: #1D1D1D
+    transition: all 1s
+
+    @media screen and ( max-width:  512px)
+      margin-right: 0
+  .basket
+    @media screen and ( max-width:  512px)
+      display: none
+    img
+      display: block
+      width: 100%
+      height: 100%
+
+.search
+  margin: 16px 0 50px
+  padding: 0 81px 0 87px
+  transition: padding 1s
+  @media screen and ( max-width:  768px)
+    padding: 0 8px 0 8px
+
+  input
+    display: block
+    height: 24px
+    width: 100%
+    border: none
+    border-bottom: 1px solid #757575
+    //background: #757575
+    mix-blend-mode: normal
+    opacity: 0.3
+    font-family: Roboto
+    font-style: normal
+    font-weight: normal
+    font-size: 16px
+    line-height: 24px
+    align-items: center
+
+    color: #626262
+
+    mix-blend-mode: normal
+    opacity: 0.5
+    &:active
+      border: none
+
+.btn-up
+  position: fixed
+  width: 70px
+  height: 70px
+  right: 16px
+  bottom: 24px
+  background-color: #59BD5A
+  border-radius: 2px
+  padding: 5px
+  transition: all 1s
+  opacity: 0
+
+  &.scrolled
+    display: block
+    cursor: pointer
+    opacity: 1
+
+  @media screen and ( max-width:  768px)
+    width: 64px
+    height: 64px
+  .arrow
+    position: relative
+    padding: 10px 0
+    @media screen and ( max-width:  768px)
+      padding: 5px 0
+    img
+      display: block
+      margin: 0 auto
+      transition: all 0.5s
+      &:hover
+        transform: translate(0, -5px)
+
+.restauraunts
+  //padding: 0 81px 0 87px
+  margin: auto
+  transition: padding 1s
+  //@media screen and ( max-width:  768px)
+    //padding: 0 8px 0 8px
+  h2
+    font-family: Roboto
+    font-style: normal
+    font-weight: normal
+    font-size: 22px
+    line-height: 34px
+    color: #1D1D1D
+    @media screen and ( max-width:  768px)
+      text-align: center
+  .restaurant-cards-list
+    margin: 16px 0
+    display: flex
+    flex-direction: row
+    flex-wrap: wrap
+    justify-content: flex-start
+    @media screen and ( max-width:  768px)
+      justify-content: center
+    a
+      display: block
+      text-decoration: none
+    .restaurant-card-list
+      width: 308px
+      height: 366px
+      margin-right: 16px
+      margin-top: 16px
+        
+      img
+        display: block
+        max-width: 308px
+        height: auto
+        margin-bottom: 16px
+      .restauraunt-main-information, .restauraunt-categories, .delivery-time
+        margin-top: 4px
+      .restauraunt-main-information
+        display: flex
+        flex-direction: row
+        flex-wrap: wrap
+        justify-content: flex-start
+        span
+          display: block
+          font-family: Roboto
+          font-style: normal
+          font-weight: normal
+          font-size: 16px
+          line-height: 24px
+          color: #1D1D1D
+      .restauraunt-categories
+        display: flex
+        flex-direction: row
+        flex-wrap: wrap
+        justify-content: flex-start
+        span
+          font-family: Roboto
+          font-style: normal
+          font-weight: normal
+          font-size: 14px
+          line-height: 21px
+          margin-right: 10px
+          color: #626262
+      .delivery-time
+        display: block
+        font-family: Roboto
+        font-style: normal
+        font-weight: normal
+        font-size: 13px
+        line-height: 21px
+        color: #1D1D1D
+
+footer
+  background-color: #262626
+  padding: 56px 87px 40px 81px
+  @media screen and ( max-width:  768px)
+    padding: 56px 8px 40px 8px
+  .white-logo
+    margin: 0 auto
+    img
+      display: block
+      width: 190.77px
+      height: 19.69px
+  .punkts
+    display: flex
+    flex-direction: row
+    justify-content: flex-start
+    @media screen and ( max-width:  512px)
+      flex-direction: column
+    .one, .two, .three
+      display: flex
+      flex-direction: column
+      margin-right: auto
+      @media screen and ( max-width:  768px)
+        margin-right: 10px
+    ul
+      list-style: none
+    .one
+      margin-bottom: 39px
+      select
+        width: 227px
+        height: 40px
+        background-color: #3B3B3B
+        border-radius: 2px
+        border: none
+        font-family: Roboto
+        font-style: normal
+        font-weight: normal
+        font-size: 13px
+        line-height: 15px
+        color: #FFFFFF
+        padding: 0 16px
+        img
+          display: inline-block
+          width: 15.72px
+          height: 15.72px
+      .social-media
+        margin-top: 33px
+        span
+          display: block
+          font-family: Roboto
+          font-style: normal
+          font-weight: normal
+          font-size: 16px
+          line-height: 19px
+          color: #FFFFFF
+          margin-bottom: 17px
+          &.diez
+            display: inline
+            color: #49A144
+        .list
+          display: flex
+          flex-direction: row
+          justify-content: flex-start
+          li
+            display: block
+            margin-right: 8px
+          img
+            dispay: block
+            width: 24px
+            height: 24px
+    .two, .three
+      font-family: Roboto
+      font-style: normal
+      font-weight: normal
+      font-size: 13px
+      line-height: 15px
+      color: #FFFFFF
+      ul
+        li
+          display: block
+          margin-bottom: 23px
+  .downloads
+    display: flex
+    flex-direction: row
+    justify-content: center
+    img
+      display: block
+      width: 120.66px
+      height: 40px
+      &:first-child
+        margin-right: 40px
+        @media screen and ( max-width: 768px)
+          margin-right: 23px
+
+      &:last-child
+        margin-left: 40px
+        @media screen and ( max-width: 768px)
+          margin-right: 23px
+
+  .info
+    ul
+      display: flex
+      flex-direction: row
+      justify-content: space-between
+      //flex-wrap: wrap
+      @media screen and ( max-width:  768px)
+        flex-direction: column
+      li
+        display: block
+        font-family: Roboto
+        font-style: normal
+        font-weight: normal
+        font-size: 11px
+        line-height: 13px
+        color: #FFFFFF
+        margin-bottom: 24px
+
+  hr
+    margin: 41px auto 41px

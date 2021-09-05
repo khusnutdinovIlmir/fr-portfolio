@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/style.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Магазин кошек</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="background">
+        <div class="header-container">
+          <div class="logo">
+            <img src="./assets/img/cat-shop-logo.png" alt="" />
+          </div>
+          <ul class="menu">
+            <li>
+              <a href="#">Main</a>
+            </li>
+            <li>
+              <a href="#">Gallery</a>
+            </li>
+            <li>
+              <a href="#">News</a>
+            </li>
+            <li>
+              <a href="#">Profile</a>
+            </li>
+          </ul>
+          <div class="contact">
+            <span>+544 3490 00000</span>
+            <span>Звони скорее!</span>
+          </div>
+        </div>
+        <div class="found-cats"></div>
+      </div>
+    </header>
+    <main>
+      <div class="sort-caption">
+        <div class="caption">
+          <span> Сортировать по: </span>
+        </div>
+        <div class="sort-by-price">
+          <span>Цене</span>
+          <div class="arrow arrow-down">
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+        <div class="sort-by-age">
+          <span>Возрасту</span>
+          <div class="arrow arrow-down">
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+      </div>
+      <div class="cat-cards"></div>
+      <div class="show-more">
+        <button class="caption">Показать ещё 6</button>
+      </div>
+      <div class="subscribe">
+        <div class="warning">
+          <h3>Успей купить!</h3>
+          <span>Подпишись и успей словить все акции</span>
+        </div>
+        <div class="input-email">
+          <form action="">
+            <input class="email" type="email" placeholder="Email"/>
+            <button>Подписаться</button>
+            <label class="checkbox">
+              <input type="checkbox" />
+              <span class="box">
+                <svg
+                  class="kek"
+                  width="10"
+                  height="8"
+                  viewBox="0 0 10 8"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M4.5266 7.388C4.07322 7.84139 3.33756 7.84139 2.8844 7.388L0.340036 4.84358C-0.113345 4.3904 -0.113345 3.65474 0.340036 3.20156C0.793199 2.74817 1.52885 2.74817 1.98223 3.20156L3.49817 4.71732C3.61261 4.83154 3.79839 4.83154 3.91304 4.71732L8.01777 0.612505C8.47093 0.159113 9.20658 0.159113 9.65996 0.612505C9.87768 0.830229 10 1.12563 10 1.43351C10 1.74139 9.87768 2.03679 9.65996 2.25452L4.5266 7.388Z"
+                    fill="white"
+                  />
+                </svg>
+              </span>
+              Подписаться на новости
+            </label>
+          </form>
+        </div>
+      </div>
+      <div class="btn-up">
+        <span></span>
+        <span></span>
+      </div>
+    </main>
+    <div class="added-to-favorites">Товар добавлен в избранное</div>
+    <div class="removed-from-favorites">Товар удален из избранного</div>
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>
