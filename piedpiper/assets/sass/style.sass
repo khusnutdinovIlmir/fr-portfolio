@@ -28,11 +28,15 @@
         margin-top: 5px
         margin-bottom: 5px
         align-self: center
+
         .delivetor
           display: none
+
         a
-          animation-name: hello
-          animation-duration: 2s
+          display: block
+          &.anim-item
+            animation-name: show-menu-item
+            animation-duration: 4s
 
     .toggle-btn
       +setPadding(16px 10px 4px)
@@ -179,7 +183,7 @@
     p
       +setFontParametres($fontSize: 32px, $lineHeight: 37px, $clr: #000000)
       margin-bottom: 40px
-    
+
       b
         font-weight: 500
         color: #000000
@@ -248,7 +252,7 @@ footer
   text-align: center
   background-color: #333333
 
-@keyframes hello
+@keyframes show-menu-item
   0%
     opacity: 0
   100%

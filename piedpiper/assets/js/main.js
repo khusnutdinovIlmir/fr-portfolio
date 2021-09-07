@@ -40,22 +40,30 @@ const header = document.querySelector('.header');
 const menuList = document.querySelector('.header__menu');
 const toggleBtn = document.querySelector('.header__toggle-btn');
 const behind = document.querySelector('.behind');
+const animMenuItems = document.querySelectorAll('.header__menu li a');
+
+const animatedItems = () => {
+  for (let i = 0; i < animMenuItems.length; i++) {
+    animMenuItems[i].classList.toggle('anim-item');
+  }
+};
+
 
 const openMenu = () => {
   header.classList.toggle('active');
-  //toggleBtn.classList.toggle('oppened');
   behind.style.visibility = 'visible';
+  animatedItems();
   disableScroll();
 };
 
 const closeMenu = () => {
   header.classList.remove('active');
-  //toggleBtn.classList.remove('oppened');
   behind.style.visibility = 'hidden';
+  animatedItems();
   enableScroll();
 };
 
-const doMenu = () => {
+const actionsWithMenu = () => {
   if (!header.classList.contains('active')) {
     openMenu();
   } else {
@@ -97,5 +105,5 @@ menuList.addEventListener('click', event => {
   }
 });
 
-toggleBtn.addEventListener('click', doMenu);
+toggleBtn.addEventListener('click', actionsWithMenu);
 behind.addEventListener('click', closeMenu);
