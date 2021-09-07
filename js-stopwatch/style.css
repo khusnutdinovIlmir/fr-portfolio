@@ -1,0 +1,45 @@
+body {
+  background-color: coral;
+  height: 100%;
+}
+
+.wrapper {
+  width: 800px;
+  margin: 30px auto;
+  color: #ffffff;
+  text-align: center;
+}
+
+h1, h2, h3 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 100;
+  font-size: 2.6em;
+  text-transform: uppercase;
+}
+
+#minutes, #seconds, #tens, #dots {
+  font-size: 2em;
+  font-weight: bold;
+}
+
+button {
+  border-radius: 5px;
+  background-color: coral;
+  color: #ffffff;
+  border: solid 1px #ffffff;
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 1.2em;
+  padding: 18px 10px;
+  width: 150px;
+  margin: 10px;
+  outline: none;
+  margin-top: 20px;
+}
+
+button:hover {
+  transition: all 0.5s easy-in-out;
+  background-color: #ffffff;
+  border: solid 1px #ffffff;
+  color: coral;
+}
